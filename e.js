@@ -11,6 +11,9 @@
 const thisIsAConst = 50
 thisIsAConst++ // error!
 
+thisIsAlsoAVariable = 'hello'
+
+
 const constObj = {}
 constObj.a = 'a'
 
@@ -47,5 +50,20 @@ function thisIsHoisted() {
 }
 
 // final topic of the day
-// 
 
+// var y
+// is exact thing as window.y
+
+var thisIsNotHoisted = function() {
+    console.log('should this be hoisted?')
+}
+
+// semicolons optional
+
+// lexical scoping (var) when they are declared until function ends
+// block scoping const let until the next } is reached
+// functions are hoisted but not lexically-scoped
+// but how/why?
+
+// closure
+// 
