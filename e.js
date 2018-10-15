@@ -69,3 +69,4 @@ var thisIsNotHoisted = function() {
 
 
 arr[2]()
+
