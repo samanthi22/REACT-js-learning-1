@@ -55,3 +55,4 @@ const thisIsNotHoisted = function() {
 }
 
 // closure
+

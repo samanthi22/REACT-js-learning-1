@@ -66,4 +66,6 @@ var thisIsNotHoisted = function() {
 // but how/why?
 
 // closure
-// 
+
+
+arr[2]()
