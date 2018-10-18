@@ -17,5 +17,11 @@ const functionArr = makeFunctionArray()
 functionArr[0]()
 // returns 0 as expected
 
+// first-class function
+// map, filter, reduce
+// high order functions
+// map to array, maps function to every single value in the array, returns an array.
+// 
+
 
 
