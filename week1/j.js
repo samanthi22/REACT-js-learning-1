@@ -28,4 +28,20 @@ var thisIsAVar = 'new value!'
 
 console.log(thisIsAVar)
 
+// global object
+// keys or methods on the global object
+// window
+
+
 // const let, 
+
+// closure
+// explicit wrap it with the type that I want
+// implicit rely on javascript
+
+const val = 42
+const arr = [
+    'string',
+    42,
+    function() { console.log('hi!')
+    ]
