@@ -18,6 +18,16 @@ const sayHello = (function () {
     return arr
 })()
 
-const functionArr = makeFunctionArray()
+const counter = (function() {
+    let count = 0
+    
+    return {
+        inc: function() { count = count + 1},
+        get: function() { console.log(count) },
+    }
+})()
 
-functionArr[0]()
+counter.get()
+counter.inc()
+counter.get()
+
