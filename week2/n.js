@@ -14,9 +14,10 @@ function login(req, res, callback) {
     })
     .then(function(token) {
         user.token = token
-        user.save((err) => {
-            res.json({token})
+        return user.save() 
         })
+    .then(function() {
+        res.json({token})
     })
     .catch(function(err) {
         return callback(err)
@@ -25,3 +26,7 @@ function login(req, res, callback) {
     // what do we do with that user
     
 }
+
+// new login function with promises instead of callbacks
+// EC2017 async/await
+
