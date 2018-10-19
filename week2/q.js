@@ -22,10 +22,26 @@ friend.greet()
 // is david
 console.log(this.name = 'yowon')
 
-const greet = person.greet
+const greet = person.greet.bind({name: 'this is a bound object'})
+person.greet.call({name: 'this is a bound object'})
+person.greet.apply({name: 'this is a bound object'})
 
 greet()
 
 // what is this
 // where is this function getting invoked, line 15
 person.greet()
+// es6 arrow notation
+// 
+
+const newPerson = {
+    name: 'newPerson',
+    // arrow notation
+    greet: () => { console.log('hi, ' + this.name) }
+}
+
+newPerson.greet()
+
+newPerson.greet() 
+this.name
+// undefined
