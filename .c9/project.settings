@@ -20,7 +20,23 @@
     "run": {
         "configs": {
             "@inited": "true",
-            "json()": {}
+            "json()": {
+                "console.log(\"a)": {
+                    "command": "week2/p.js",
+                    "debug": false,
+                    "env": {},
+                    "name": "console.log(\"a)",
+                    "runner": "Node.js",
+                    "toolbar": true
+                },
+                "this": {
+                    "command": "week2/o.js",
+                    "debug": false,
+                    "name": "this",
+                    "runner": "Node.js",
+                    "toolbar": true
+                }
+            }
         }
     },
     "welcome": {

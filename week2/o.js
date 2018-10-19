@@ -13,7 +13,7 @@ async function login(req, res, callback) {
     
    
         user.token = token
-        user.save() 
+        const success = await user.save() 
     
         res.json({token})
     } catch(err) {
@@ -22,3 +22,6 @@ async function login(req, res, callback) {
     // what do we do with that user
     
 }
+
+// keyword "this"
+// refers to global object
