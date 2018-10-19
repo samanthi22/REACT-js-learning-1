@@ -42,3 +42,21 @@ function printThree() {
 setTimeout(printOne, 1000)
 setTimeout(printTwo, 0)
 printThree()
+
+// stack
+// appears on the top
+
+function a() {
+    console.log('hi')
+}
+
+function b() {
+    a()
+}
+
+function c() {
+    b()
+}
+
+c()
+// prints "hi"
