@@ -45,3 +45,10 @@ newPerson.greet()
 newPerson.greet() 
 this.name
 // undefined
+// DOM 
+// html, head, body, title, 'This is a simple page'
+// describe that as a tree
+// Document, HTML, head, body
+// (tree-like)
+// create to-do app
+// js DOM manipulation

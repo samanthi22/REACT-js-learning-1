@@ -16,3 +16,7 @@ const x = [0,1,2,3]
 
 console.log(map(x, addOne))
 // [1,2,3,4]
+
+function isGreaterThanOne(num) { return num > 1 }
+console.log(isGreaterThanOne(100))
+console.log(isGreaterThanOne(1))
